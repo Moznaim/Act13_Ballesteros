@@ -1,0 +1,11 @@
+---
+- name: Configure COntroller Node
+  hosts: manage
+  roles:
+    - ntp
+    - openstack_packages
+    - sql_database
+    - message_queue
+    - memcached
+    - etcd
+
